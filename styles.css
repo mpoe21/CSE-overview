@@ -1,0 +1,142 @@
+/* Colors inspired by the uploaded logo */
+:root {
+    --primary-blue: #1f5fa8;
+    --primary-yellow: #f2c94c;
+    --white: #ffffff;
+    --baby-blue: #8db9d9;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-blue);
+    color: var(--primary-blue);
+    background-image: url('./photos/campus.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    width: 250px;
+    height: 300px;
+}
+
+.header-image {
+    width: 128px;
+    height: 100px;
+}
+
+.course-image {
+    display: block;
+    width: 75%;
+    height: auto;
+}
+
+.course-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--baby-blue);
+}
+
+.container:hover .course-overlay {
+  opacity: 1;
+}
+
+.course-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--baby-blue);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-yellow);
+    color: var(--baby-blue);
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: auto;
+    background: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Section Titles */
+h2 {
+    background-color: var(--primary-yellow);
+    color: var(--primary-blue);
+    padding: 10px;
+    margin: -20px -20px 10px;
+    text-align: center;
+}
+
+h3 {
+    background-color: var(--primary-yellow);
+    color: var(--primary-blue);
+    padding: 10px;
+    margin: 0px -20px 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Sections */
+.section {
+    padding: 10px 0;
+}
+
+.section p {
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: var(--baby-blue);
+    color: var(--white);
+    padding: 10px;
+    margin-top: 20px;
+}
